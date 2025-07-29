@@ -52,7 +52,6 @@ OWNER_ID = 6050965589 # Replace with the actual owner's user ID
 
 # List of sudo users (initially empty or pre-populated)
 SUDO_USERS = [6050965589]
--
 -AUTH_CHANNEL = 1002783273612
 
 # Function to check if a user is authorized
