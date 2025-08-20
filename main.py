@@ -59,7 +59,7 @@ AUTH_CHANNEL = 1002646125128
 # Function to check if a user is authorized
 def is_authorized(user_id: int) -> bool:
     return (
-      user_id = OWNER_ID 
+      user_id == OWNER_ID 
   or user_id in SUDO_USERS 
    or user_id = AUTH_CHANNEL
     )
