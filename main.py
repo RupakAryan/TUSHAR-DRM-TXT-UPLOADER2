@@ -57,9 +57,12 @@ SUDO_USERS = [5776977809]
 AUTH_CHANNEL = 1002646125128
 
 # Function to check if a user is authorized
-def is_authorized(user_id: int) > bool:
-    return user_id = OWNER_ID or user_id in SUDO_USERS or user_id = AUTH_CHANNEL
-
+def is_authorized(user_id: int) -> bool:
+    return (
+      user_id = OWNER_ID 
+  or user_id in SUDO_USERS 
+   or user_id = AUTH_CHANNEL
+    )
 bot = Client(
     "bot",
     api_id=API_ID,
