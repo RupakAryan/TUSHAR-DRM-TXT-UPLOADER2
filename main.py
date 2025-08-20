@@ -61,7 +61,7 @@ def is_authorized(user_id: int) -> bool:
     return (
       user_id == OWNER_ID 
   or user_id in SUDO_USERS 
-   or user_id = AUTH_CHANNEL
+   or user_id in AUTH_CHANNEL
     )
 bot = Client(
     "bot",
